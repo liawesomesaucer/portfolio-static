@@ -9,13 +9,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="effects.js"></script>
-
-	<script type="text/javascript">
-		$(".showMore").click(function() {
-			console.log("wowow");
-			$(".hidden").css({ "max-height:1000px;overflow:visible;"});
-		});
-	</script>
 </head>
 <body>
 
@@ -75,10 +68,26 @@
 			<div class="page-content-wrapper">
 				<div class="page">
 					<div class="page-projects">
-						<h2 class="page-header">Portfolio</h2>
+						<a href="portfolio.html"><h2 class="page-header">Portfolio</h2></a>
 						<div class="project-list">
 							<ul class="projects inner-ul">
 
+							<a href="project/art_of_espresso.html">
+							<li class="tile">
+								<div class="grid tiled">
+									
+									<div class="img_wrapper" style="background-color:#333">
+										<!-- <img src="{{ img_url }}" alt="vincent3"/> -->
+										<div class="img_inner" style="background: url(images/aoe_front.png) no-repeat center 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;"></div>
+									</div>
+									<div class="tile-text">
+										<h2 class="tile-header" style="color:#333;"><span>The Art of Espresso</span></h2>
+										<p class="tile-description">UCSD's dankest coffee cart.</p>
+									</div>
+									
+								</div>
+							</li>
+						</a>			
 								<a href="project/kingmaker.html">
 									<li class="tile">
 										<div class="grid tiled">

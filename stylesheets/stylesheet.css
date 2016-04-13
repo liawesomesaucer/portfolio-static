@@ -7,7 +7,8 @@ html, body{
 	padding: 0px;
 	margin: 0px;
 	color: rgb(57, 66, 85) ;
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
+	overflow: visible;
 }
 h1, h2, h3, h4, h5, h6, p, a, li, ul{
 	font-family: OpenSans-Light, Segoe UI Light, Roboto, Helvetica, sans-serif;
@@ -174,7 +175,7 @@ a {
 	/*padding-top: 100px;*/
 	padding-bottom: 100px;
 	padding-top: 100px;
-
+	text-transform: none;
 	width: 100%;
 	margin: auto;
 }

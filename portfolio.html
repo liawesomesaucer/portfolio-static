@@ -10,12 +10,6 @@
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="effects.js"></script>
 
-	<script type="text/javascript">
-		$(".showMore").click(function() {
-			console.log("wowow");
-			$(".hidden").css({ "max-height:1000px;overflow:visible;"});
-		});
-	</script>
 </head>
 <body>
 
@@ -24,7 +18,7 @@
 			<div class="nav">
 				<ul>
 					<a name="top"></a>
-					<a href=""><li class="li-nav float-left"><b>Vincent Liaw</b></li></a>
+					<a href="index.html"><li class="li-nav float-left"><b>Vincent Liaw</b></li></a>
 					<a href="vincent_liaw_resume.pdf" target="_blank"><li class="li-nav float-right">Resume</li></a>
 					<a href="portfolio.html"><li class="li-nav float-right">Portfolio</li></a>
 				</ul>
@@ -39,29 +33,43 @@
 				<div class="project-list">
 					<ul class="projects inner-ul">
 
+						<a href="project/art_of_espresso.html">
+							<li class="tile">
+								<div class="grid tiled">
+									
+									<div class="img_wrapper" style="background-color:#333">
+										<!-- <img src="{{ img_url }}" alt="vincent3"/> -->
+										<div class="img_inner" style="background: url(images/aoe_front.png) no-repeat center 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;"></div>
+									</div>
+									<div class="tile-text">
+										<h2 class="tile-header" style="color:#333;"><span>The Art of Espresso</span></h2>
+										<p class="tile-description">UCSD's dankest coffee cart.</p>
+									</div>
+									
+								</div>
+							</li>
+						</a>
 						<a href="project/kingmaker.html">
 							<li class="tile">
 								<div class="grid tiled">
-				<!-- <h3 class="tile-header">{{ name }}</h3>
-				<p class="tile-description">
-					{{ short_description }}
-				</p> -->
-				<div class="img_wrapper" style="background-color:#48615d">
-					<!-- <img src="{{ img_url }}" alt="vincent3"/> -->
-					<div class="img_inner" style="background: url(images/kingmaker.png) no-repeat center 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;"></div>
-				</div>
-				<div class="tile-text">
-					<h2 class="tile-header" style="color:#48615d;"><span>KingMaker</span></h2>
-					<p class="tile-description">Seamless facial recognition checkouts.</p>
-				</div>
-				
-			</div>
-		</li>
-	</a>
+
+									<div class="img_wrapper" style="background-color:#48615d">
+										<!-- <img src="{{ img_url }}" alt="vincent3"/> -->
+										<div class="img_inner" style="background: url(images/kingmaker.png) no-repeat center 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;"></div>
+									</div>
+									<div class="tile-text">
+										<h2 class="tile-header" style="color:#48615d;"><span>KingMaker</span></h2>
+										<p class="tile-description">Seamless facial recognition checkouts.</p>
+									</div>
+
+								</div>
+							</li>
+						</a>
 	
-	<a href="project/exposr.html">
-		<li class="tile">
-			<div class="grid tiled">
+						
+						<a href="project/exposr.html">
+							<li class="tile">
+								<div class="grid tiled">
 				<!-- <h3 class="tile-header">{{ name }}</h3>
 				<p class="tile-description">
 					{{ short_description }}
