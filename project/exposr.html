@@ -1,0 +1,67 @@
+<html><head>
+  <link rel="stylesheet" type="text/css" class="__meteor-css__" href="/merged-stylesheets.css?272f38f2ea58d0aa33437efc2f823c3327df2146">
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Vincent Liaw</title>
+	<link rel="stylesheet" href="../stylesheets/stylesheet.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="effects.js"></script>
+
+	<script type="text/javascript">
+		$(".showMore").click(function() {
+			console.log("wowow");
+			$(".hidden").css({ "max-height:1000px;overflow:visible;"});
+		});
+	</script>
+  </head>
+<body>
+
+
+
+
+
+<header>
+		<div class="nav-wrapper">
+			<div class="nav">
+				<ul>
+					<a name="top"></a>
+					<a href="index.html"><li class="li-nav float-left"><b>Vincent Liaw</b></li></a>
+					<a href="../vincent_liaw_resume.pdf" target="_blank"><li class="li-nav float-right">Resume</li></a>
+					<a href="../portfolio.html"><li class="li-nav float-right">Portfolio</li></a>
+				</ul>
+			</div>
+		</div>
+	<!-- Main stuff would go here --><div class="content" style="background-color:#3e3955">
+	<div class="page">
+		<div class="pages-wrapper">
+
+			<div class="page-project">
+				<div class="project-header">
+					<div class="inline">
+						<div class="vincent-icon vincent-icon-small inline-vincent"></div>
+					</div>
+					<div class="inline" style="margin-top: 10px; color: white">
+						<!-- <h1>{{> project['name']}}</h1> -->
+						<h1 class="projectName">Exposr</h1>
+						<!-- <h2>{{> project['description']}}</h2> -->
+						<p class="projectDescription hidden">Location-based photography sharing site for sharing beautiful photographs and finding inspiration. Built for COGS187A. Backend built with Python-Flask deployed on Heroku; photos stored in AWS S3. Used the Google maps API with a custom color scheme. Team of 5. I worked on some UI/UX design and worked on most of the implementation.</p>
+					</div>
+				</div>
+
+				<!-- <a href="#" class="showMore"><p class="showMore" style="text-align: center;color: white;">Show More</p></a> -->
+				
+				<div class="project-body">
+					<a href="http://xposr.herokuapp.com" target="_blank">
+						<img class="project-img" id="projectName" src="../images/exposr.png">
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	<span style="color:white"><div class="footer">
+		<p><a class="thick" href="/resume.pdf" target="_blank">Resume</a> | <a class="thick" href="/portfolio">Portfolio</a> | <a class="thick" href="https://github.com/liawesomesaucer">GitHub</a></p>
+	</div></span>
+</div></body></html>

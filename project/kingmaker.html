@@ -1,0 +1,67 @@
+<html><head>
+  <link rel="stylesheet" type="text/css" class="__meteor-css__" href="/merged-stylesheets.css?272f38f2ea58d0aa33437efc2f823c3327df2146">
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Vincent Liaw</title>
+	<link rel="stylesheet" href="../stylesheets/stylesheet.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="effects.js"></script>
+
+	<script type="text/javascript">
+		$(".showMore").click(function() {
+			console.log("wowow");
+			$(".hidden").css({ "max-height:1000px;overflow:visible;"});
+		});
+	</script>
+  </head>
+<body>
+
+
+
+
+
+<header>
+    <div class="nav-wrapper">
+      <div class="nav">
+        <ul>
+          <a name="top"></a>
+          <a href="../index.html"><li class="li-nav float-left"><b>Vincent Liaw</b></li></a>
+          <a href="../vincent_liaw_resume.pdf" target="_blank"><li class="li-nav float-right">Resume</li></a>
+          <a href="../portfolio.html"><li class="li-nav float-right">Portfolio</li></a>
+        </ul>
+      </div>
+    </div>
+	<!-- Main stuff would go here --><div class="content" style="background-color:#48615d">
+	<div class="page">
+		<div class="pages-wrapper">
+
+			<div class="page-project">
+				<div class="project-header">
+					<div class="inline">
+						<div class="vincent-icon vincent-icon-small inline-vincent"></div>
+					</div>
+					<div class="inline" style="margin-top: 10px; color: white">
+						<!-- <h1>{{> project['name']}}</h1> -->
+						<h1 class="projectName">KingMaker</h1>
+						<!-- <h2>{{> project['description']}}</h2> -->
+						<p class="projectDescription hidden">This is kingmaker, a game-changing web app designed to streamline payments using PayPal's API and a cutting-edge facial recognition system using OpenCV. I worked on the server and designing and implementing the frontend. Built at Money2020 Vegas 2015 with a team of 5.  I focused on the frontend development, handling incoming data from our CV backend and converting them into pleasant and readable format.  I worked on the design and implementation of the webapp, focusing on displaying loads of similar transactions in an orderly but intriguing fashion.  The transaction feed would live update as the backend sent facial recognition data to it.  I also implemented a frontpage emulating top-level SaaS companies' for our final pitch (to PayPal).</p>
+					</div>
+				</div>
+
+				<!-- <a href="#" class="showMore"><p class="showMore" style="text-align: center;color: white;">Show More</p></a> -->
+				
+				<div class="project-body">
+					<a href="http://kingmaker.meteor.com" target="_blank">
+						<img class="project-img" id="projectName" src="../images/kingmaker.png">
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	<span style="color:white"><div class="footer">
+		<p><a class="thick" href="/resume.pdf" target="_blank">Resume</a> | <a class="thick" href="/portfolio">Portfolio</a> | <a class="thick" href="https://github.com/liawesomesaucer">GitHub</a></p>
+	</div></span>
+</div></body></html>
