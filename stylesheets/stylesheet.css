@@ -18,8 +18,12 @@ h1, h2, h3, h4, h5, h6, p, a, li, ul{
 	font-family: OpenSans-Light, Segoe UI Light, Roboto, Helvetica, sans-serif;
 	font-weight: normal;
 	letter-spacing: 1px;
+	font-weight: 400;
 }
 h1, h2 {
+	font-family: Montserrat;
+}
+strong {
 	font-family: Montserrat;
 }
 .tile-header {
@@ -170,8 +174,6 @@ li.li-nav {
 li.li-nav:hover {
 	border-bottom: 2px solid;
 	margin-bottom: -2px;
-
-
 }
 li.float-left b {
 	float: left;
@@ -260,6 +262,15 @@ a {
 }
 .intro-text {
 	font-size: 24px;
+}
+.intro-links {
+	line-height: 30px;
+}
+.intro-links p {
+	margin: 8px 0;
+}
+.intro-links a {
+	border-bottom: 2px solid;
 }
 .img_wrapper {
 	/*background: url(../images/mac.png) no-repeat center center;*/
@@ -354,9 +365,10 @@ li.tile {
 .tile-header {
 	font-size: 22px;
 	line-height: 22px;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	letter-spacing: 2.5px;
 	margin-bottom: 10px;
+	font-family: Montserrat;
 }
 .tile-header i {
 	margin-left: 10px;
