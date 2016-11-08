@@ -136,6 +136,10 @@ header {
     	/*margin: auto;*/
     	text-align: center;
     }
+    .projectName {
+    	text-align: center;
+    	display: block !important;
+    }
 }
 
 .page-projects, .page-skills {
