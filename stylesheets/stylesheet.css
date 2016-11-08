@@ -2,6 +2,10 @@
 	font-family: OpenSans-Light;
 	src: url(../fonts/OpenSans-Light.ttf);
 }
+@font-face {
+	font-family: Montserrat;
+	src: url(../fonts/Montserrat-Regular.ttf);
+}
 
 html, body{
 	padding: 0px;
@@ -14,6 +18,15 @@ h1, h2, h3, h4, h5, h6, p, a, li, ul{
 	font-family: OpenSans-Light, Segoe UI Light, Roboto, Helvetica, sans-serif;
 	font-weight: normal;
 	letter-spacing: 1px;
+}
+h1, h2 {
+	font-family: Montserrat;
+}
+.tile-header {
+	font-family: OpenSans-Light;
+}
+h1 {
+	font-size: 48px;
 }
 a:hover {
 	cursor: pointer;
@@ -60,8 +73,8 @@ header {
 }
 .vincent-icon {
 	margin: 0 auto;
-	width:130px;
-	height:130px;
+	width:140px;
+	height:140px;
 	border-radius: 150px;
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
@@ -70,9 +83,15 @@ header {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	box-shadow: 0 0 0 4px #fff;
-	-webkit-box-shadow: 0 0 0 4px #fff;
-	-moz-box-shadow: 0 0 0 4px #fff;
+	box-shadow: 0 0 0 5px #fff;
+	-webkit-box-shadow: 0 0 0 5px #fff;
+	-moz-box-shadow: 0 0 0 5px #fff;
+}
+@media screen and (min-width: 1400px) {
+	.vincent-icon {
+		width: 180px;
+		height: 180px
+	}
 }
 .vincent-icon-small {
 	margin-top: 40px;
@@ -127,6 +146,7 @@ header {
 }
 .project-header {
 	min-height: 150px;
+	margin-bottom: 25px;
 }
 .project-body img {
 	/*border: 2px solid;*/
@@ -175,8 +195,8 @@ a {
 	/*min-height: 100vh;*/
 	/*background-color: #e6e6e6;*/
 	/*padding-top: 100px;*/
-	padding-bottom: 100px;
-	padding-top: 100px;
+	/*padding-bottom: 50px;*/
+	padding-top: 50px;
 	text-transform: none;
 	width: 100%;
 	margin: auto;
@@ -190,7 +210,7 @@ a {
 	background-color: #e6e6e6;
 }
 .page-header {
-	font-size: 28px;
+	font-size: 42px;
 }
 .main {
 	text-align: center;
@@ -219,6 +239,7 @@ a {
 .content {
 	background-color: #e6e6e6;
 	/*padding: 10%;*/
+	margin-top: 40px;
 }
 .pages-wrapper {
 	padding: 0 10% 0 10%;
@@ -260,6 +281,9 @@ a {
 	/*margin-top: 100px;*/
 	/*width: 50%;*/
 	height: 100%;
+}
+.projectDescription a {
+	text-decoration: underline;
 }
 li.tile {
 	/*position: relative;*/
@@ -320,17 +344,54 @@ li.tile {
 	font-size: 22px;
 	line-height: 22px;
 	text-transform: uppercase;
-	letter-spacing: 2px;
-
+	letter-spacing: 2.5px;
+	margin-bottom: 10px;
+}
+.tile-header i {
+	margin-left: 10px;
 }
 .tile-description {
 	font-size:16px;
 	text-align: left;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+.tile-tags {
+	list-style-type: none;
+	padding-left: 0;
+	padding-bottom: 14px;
+}
+.tile-tags li {
+	font-size: 14px;
+	border-radius: 3px;
+	background-color: #e2e3e5;
+	padding: 4px;
+	margin-right: 3px;
+	display: inline;
 }
 .tile-text {
 	background-color: rgba(255, 255, 255, 0.8);
-	padding: 0px 10px 0px 10px;
+	padding: 0px 80px 0px 10px;
+	position: relative;
 }
+.tile-text-right {
+	position: absolute;
+	right: 10px;
+	text-align: center;
+	top: 14px;
+	color: #a1a4ac;
+
+}
+.tile-text-right p {
+	margin-top: 0;
+	margin-bottom: 8px;
+}
+.tile-text-right i {
+	font-size: 36px;
+}
+.tile-text-right:hover {
+	color: #394256;
+};
 
 .footer {
 	/*background-color: #e6e6e6;*/
@@ -338,6 +399,12 @@ li.tile {
 	margin: auto;
 	text-align: center;
 	height: 60px;
+}
+.footer p {
+	text-align: center;
+	margin-bottom: 0;
+	line-height: 100px;
+	margin-top: 0;
 }
 .skill-div {
 	min-height: 50px;
@@ -390,4 +457,16 @@ li.tile {
 .quick-links a p {
 	font-size: 18px;
 	line-height: 36px;
+}
+.projectName {
+	display: inline-block;
+}
+.projectName:hover {
+  -webkit-box-shadow:inset 0px -2px 0px 0 #fff;
+  -moz-box-shadow:inset 0px -2px 0px 0 #fff;
+  box-shadow:inset 0px -2px 0px 0 #fff;
+}
+.projectName i {
+	margin-left: 20px;
+	font-size: 36px;
 }
