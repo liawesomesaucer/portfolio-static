@@ -15,8 +15,9 @@
 	<meta name="url" content="http://vincentliaw.me" />
 	<meta name="site_name" content="Vincent Liaw" />
 	
-	<link rel="stylesheet" href="stylesheets/stylesheet.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="stylesheets/stylesheet.css">
+
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="effects.js"></script>
 	<script type="text/javascript" src="header.js"></script>
@@ -30,7 +31,7 @@
 			<div class="nav">
 				<ul>
 					<a name="top"></a>
-					<a href=""><li class="li-nav float-left"><b>Vincent Liaw</b></li></a>
+					<a href=""><li class="li-nav float-left"><b>Vincent <span class="lastname">Liaw</span></b></li></a>
 					<a href="vincent_liaw_resume.pdf" target="_blank"><li class="li-nav float-right">Resume</li></a>
 					<a href="#work"><li class="li-nav float-right">Work</li></a>
 				</ul>
@@ -48,7 +49,7 @@
 				<h1>Hi, I'm <b>Vincent.</b></h1>
 				<h3>I'm interested in <strong>machine learning</strong>,
 					<strong>frontend</strong>, and <strong>startups</strong></h3>
-					<h3>I study <strong>CompSci</strong> and <strong>Cogsci</strong> at <strong>UCSD</strong></h3>
+					<h3>I study <strong>CompSci</strong> and <strong>CogSci</strong> at <strong>UCSD</strong>, graduating <strong>2018</strong></h3>
 				</div>
 
 				<ul class="quick-links">
@@ -64,13 +65,17 @@
 				<div class="page intro">
 					<h2 class="page-header">Hello.</h2>
 					<div class="intro-content">
-						<p class="intro-text">I'm Vincent, a third-year student at UCSD. I like mechanical keyboards and hackathons. </p>
 						<p>
-							I'm currently working at <strong>Team Solomid</strong>, an Instructional Assistant for <strong>COGS 187A</strong>, and an <strong>SD Hacks II</strong> organizer.
+							I'm currently a web developer at <strong>Team Solomid</strong>, an Instructional Assistant for <strong>COGS 187A</strong>, and an <strong>SD Hacks </strong> organizer for 2017.
 						</p>
-						<a href="https://github.com/liawesomesaucer"><p>Github: @liawesomesaucer</p></a>
-						<a href="https://linkedin.com/in/vincentliaw"><p>Linkedin: vincentliaw</p></a>
-						<a href="mailto:vcliaw@ucsd.edu"><p>Email: vcliaw@ucsd.edu</p></a>
+						<p class="intro-text">
+							I'm currently looking for <strong>Software Engineering </strong> and <strong>Frontend Engineering </strong> internships for <strong>Summer 2017</strong>.
+						</p>
+						<div class="intro-links">
+							<p>Github: @<a target="_blank" href="https://github.com/liawesomesaucer"><strong>liawesomesaucer</strong></a></p>
+							<p>Linkedin: 	<a target="_blank" href="https://linkedin.com/in/vincentliaw"><strong>vincentliaw</strong></a></p>
+							<p>Email: <a target="_blank" href="mailto:vcliaw@ucsd.edu"><strong>vcliaw@ucsd.edu</strong></a></p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -79,71 +84,169 @@
 			<div class="page-content-wrapper" id="work">
 				<div class="page">
 					<div class="page-projects">
-						<a href="portfolio.html"><h2 class="page-header">Work</h2></a>
+						<h2 class="page-header">Work</h2>
+
 						<div class="project-list">
 							<ul class="projects inner-ul">
+								<li class="tile">
+									<div class="grid tiled">
+										<a href="project/tsmgg.html">
+											<div class="img_wrapper" style="background-color:#222734">
+												<!-- <img src="{{ img_url }}" alt="vincent3"/> -->
+												<div class="img_inner" style="background: url(images/tsmgg.jpg) no-repeat center 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;"></div>
+											</div>
+										</a>
+										<div class="tile-text">
+											<a href="http://tsm.gg" target="_blank">
+												<h2 class="tile-header" style="color:#222734;"><span>TSM.GG</span><i class="fa fa-external-link"></i></h2>
+											</a>
+											<p class="tile-description">Team Solomid's News Site</p>
+											<ul class="tile-tags">
+												<li>Express</li>
+												<li>React</li>
+												<li>Redux</li>
+												<li>Heroku</li>
+											</ul>
+												<!-- <a class="tile-text-right" target="_blank" href="">
+													<i class="fa fa-github-square"></i><br>
+													<p>Code</p>
+												</a> -->
+											</div>
+										</div>
+									</li>
 
-								<a href="project/sdhacks.html">
+									<a href="project/designatucsd.html">
+										<li class="tile">
+											<div class="grid tiled">
+												<a href="project/designatucsd.html">
+													<div class="img_wrapper" style="background-color:#586e79">
+														<!-- <img src="{{ img_url }}" alt="vincent3"/> -->
+														<div class="img_inner" style="background: url(images/designatucsd.jpg) no-repeat center 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;"></div>
+													</div>
+												</a>
+												<a href="http://designatucsd.org" target="_blank">
+													<div class="tile-text">
+														<h2 class="tile-header" style="color:#586e79;"><span>DesignatUCSD</span><i class="fa fa-external-link"></i></h2>
+													</a>
+													<p class="tile-description">UCSD's Design Club</p>
+													<ul class="tile-tags">
+														<li>Jekyll</li>
+														<li>HTML/CSS</li>
+														<li>Bootstrap</li>
+													</ul>
+													<a class="tile-text-right" target="_blank" href="https://github.com/designucsd/designucsd.github.io">
+														<i class="fa fa-github-square"></i><br>
+														<p>Code</p>
+													</a>
+												</div>
+											</div>
+										</li>
+									</a>	
+
 									<li class="tile">
 										<div class="grid tiled">
-											<div class="img_wrapper" style="background-color:#476e7a">
-												<!-- <img src="{{ img_url }}" alt="vincent3"/> -->
-												<div class="img_inner" style="background: url(images/sd_hacks.png) no-repeat center 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;"></div>
-											</div>
+											<a href="project/sdhacks.html">
+												<div class="img_wrapper" style="background-color:#476e7a">
+													<!-- <img src="{{ img_url }}" alt="vincent3"/> -->
+													<div class="img_inner" style="background: url(images/sd_hacks.png) no-repeat center 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;"></div>
+												</div>
+											</a>	
 											<div class="tile-text">
-												<h2 class="tile-header" style="color:#476e7a;"><span>SD Hacks</span></h2>
+												<a href="https://www.sdhacks.io" target="_blank">
+													<h2 class="tile-header" style="color:#476e7a;"><span>SD Hacks</span><i class="fa fa-external-link"></i></h2>
+												</a>
 												<p class="tile-description">UC San Diego's Hackathon.</p>
+												<ul class="tile-tags">
+													<li>Mongo</li>
+													<li>Express</li>
+													<li>HTML/CSS</li>
+													<li>Heroku</li>
+												</ul>
+												<a class="tile-text-right" target="_blank" href="https://github.com/SDHacks/SDHacks2016">
+													<i class="fa fa-github-square"></i><br>
+													<p>Code</p>
+												</a>
 											</div>
 										</div>
 									</li>
-								</a>	
 
-								<a href="project/art_of_espresso.html">
 									<li class="tile">
 										<div class="grid tiled">
-
-											<div class="img_wrapper" style="background-color:#333">
-												<!-- <img src="{{ img_url }}" alt="vincent3"/> -->
-												<div class="img_inner" style="background: url(images/aoe_front.png) no-repeat center 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;"></div>
-											</div>
+											<a href="project/art_of_espresso.html">
+												<div class="img_wrapper" style="background-color:#333">
+													<!-- <img src="{{ img_url }}" alt="vincent3"/> -->
+													<div class="img_inner" style="background: url(images/aoe_front.png) no-repeat center 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;"></div>
+												</div>
+											</a>	
 											<div class="tile-text">
-												<h2 class="tile-header" style="color:#333;"><span>The Art of Espresso</span></h2>
-												<p class="tile-description">UCSD's aesthetic coffee cart.</p>
+												<a href="http://barreraelmer.github.io/aoewebsite" target="_blank">
+														<h2 class="tile-header" style="color:#333;"><span>Art of Espresso</span><i class="fa fa-external-link"></i></h2>
+													</a>
+													<p class="tile-description">UCSD premier coffee cart.</p>
+													<ul class="tile-tags">
+														<li>HTML/CSS</li>
+														<li>JQuery</li>
+														<li>Bootstrap</li>
+													</ul>
+												<a class="tile-text-right" target="_blank" href="https://github.com/barreraelmer/aoewebsite">
+													<i class="fa fa-github-square"></i><br>
+													<p>Code</p>
+												</a>
 											</div>
-										</div>
-									</li>
-								</a>	
+										</li>
 
-								<a href="project/kingmaker.html">
-									<li class="tile">
-										<div class="grid tiled">
-											<div class="img_wrapper" style="background-color:#48615d">
-												<!-- <img src="{{ img_url }}" alt="vincent3"/> -->
-												<div class="img_inner" style="background: url(images/kingmaker.png) no-repeat center 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;"></div>
-											</div>
-											<div class="tile-text">
-												<h2 class="tile-header" style="color:#48615d;"><span>KingMaker</span></h2>
-												<p class="tile-description">Seamless facial recognition checkouts.</p>
-											</div>
-										</div>
-									</li>
-								</a>
+<!-- 										<li class="tile">
+											<div class="grid tiled">
+												<a href="project/kingmaker.html">
+													<div class="img_wrapper" style="background-color:#48615d">
+														<div class="img_inner" style="background: url(images/kingmaker.png) no-repeat center 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;"></div>
+													</div>
+												</a>
+												<div class="tile-text">
+													<a href="http://kingmaker.meteor.com" target="_blank">
+														<div class="tile-text">
+															<h2 class="tile-header" style="color:#48615d;"><span>KingMaker</span><i class="fa fa-external-link"></i></h2>
+														</a>
+														<p class="tile-description">Facial recognition checkouts.</p>
+														<ul class="tile-tags">
+															<li>HTML/CSS</li>
+															<li>Heroku</li>
+															<li>Flask</li>
+															<li>OpenCV</li>
+														</ul>
+													</div>
+													<a class="tile-text-right" target="_blank" href="https://github.com/TheLastSage/KingMaker">
+														<i class="fa fa-github-square"></i><br>
+														<p>Code</p>
+													</a>
+												</div>
+											</li>
 
-								<a href="project/exposr.html">
-									<li class="tile">
-										<div class="grid tiled">
-
-											<div class="img_wrapper" style="background-color:#3e3955">
-												<div class="img_inner" style="background: url(images/exposr1.png) no-repeat center 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;"></div>
-											</div>
-											<div class="tile-text">
-												<h2 class="tile-header" style="color:#3e3955;"><span>Exposr</span></h2>
-												<p class="tile-description">Stunning photographic inspiration.</p>
-											</div>
-
-										</div>
-									</li>
-								</a>
+											<li class="tile">
+												<div class="grid tiled">
+													<a href="project/exposr.html">
+														<div class="img_wrapper" style="background-color:#3e3955">
+															<div class="img_inner" style="background: url(images/exposr1.png) no-repeat center 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;"></div>
+														</div>
+													</a>
+													<div class="tile-text">
+														<a href="http://xposr.herokuapp.com" target="_blank">
+															<div class="tile-text">
+																<h2 class="tile-header" style="color:#3e3955;"><span>Exposr</span><i class="fa fa-external-link"></i></h2>
+															</a>
+															<p class="tile-description">Map-based photo inspiration.</p>
+															<ul class="tile-tags">
+																<li>HTML/CSS</li>
+																<li>Heroku</li>
+																<li>Flask</li>
+															</ul>
+														</div>
+														<a class="tile-text-right" target="_blank" href="https://github.com/liawesomesaucer/first-world-dinosaurs">
+															<i class="fa fa-github-square"></i><br>
+															<p>Code</p>
+														</a>
+													</div>
+												</li> -->
 <!-- 
 								<a href="project/bitmonster.html">
 									<li class="tile">
@@ -187,13 +290,13 @@
 										</div>
 									</li>
 								</a>
- -->
-							</ul>
-						</div>
+							-->
+						</ul>
 					</div>
 				</div>
 			</div>
-
+		</div>
+<!-- 
 			<div class="page-skills-wrapper">
 				<div class="page">
 					<div class="page-skills">
@@ -240,11 +343,11 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> --><!-- End page skills wrapper -->
 		</div>
 
 		<div class="footer">
-			<p><a class="thick" href="vincent_liaw_resume.pdf" target="_blank">Resume</a> | <a class="thick" href="portfolio.html">Work</a> | <a class="thick" href="https://github.com/liawesomesaucer">GitHub</a></p>
+			<p><a class="thick" href="vincent_liaw_resume.pdf" target="_blank">Resume</a> | <a class="thick" href="index.html#work">Work</a> | <a class="thick" href="https://github.com/liawesomesaucer">GitHub</a></p>
 		</div>
 	</div>
 
@@ -258,6 +361,6 @@
 
 	ga('create', 'UA-56062910-1', 'auto');
 	ga('send', 'pageview');
-	</script>
+</script>
 </body>
 </html>
